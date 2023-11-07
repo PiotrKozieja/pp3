@@ -8,8 +8,8 @@ public class e6 {
 
 
 
-    static String myDate(){
-        return "idk";
+    static String myDate() {
+        return String.format("%04d-%02d-%02d",year,month,day);
     }
     public static void days(){
         for (int i = 0; i <month; i++){
@@ -22,8 +22,10 @@ public class e6 {
         System.out.println(months[month-1]);
     }
 
+
+    
     public static void main(String[]args){
-        myDate();
+        System.out.println(myDate());
         days();
         monthName();
     }
