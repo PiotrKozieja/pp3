@@ -17,6 +17,9 @@ public class Publisher {
     public void setCity(String city) {
         this.city = city;
     }
+    public String display(){
+        return(this.name);
+    }
     
     
 }

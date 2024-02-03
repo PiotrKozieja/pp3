@@ -1,8 +1,9 @@
 public class ebook extends book{
     private String filename;
 
-    public ebook(String stitle, String sauthor, String filename) {
-        super(stitle, sauthor);
+
+    public ebook(String stitle, String sauthor, int year, Publisher publisher, String filename) {
+        super(stitle, sauthor, year, publisher);
         this.filename = filename;
     }
 
@@ -14,6 +15,6 @@ public class ebook extends book{
         this.filename = filename;
     }
     public void display() {
-        System.out.println("Title: "+this.getTitle()+"Author: "+this.getAuthor()+"File: "+this.getFilename());
+        System.out.println("Title: "+this.getTitle()+"Author: "+this.getAuthor()+"File: "+this.getFilename()+" Publisher: "+publisher.name);
     }
 }

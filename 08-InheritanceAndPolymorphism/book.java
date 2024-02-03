@@ -2,10 +2,13 @@ public class book {
     String title;
     String author;
     public Publisher publisher;
+    int year;
 
-    public book(String stitle, String sauthor){
+    public book(String stitle, String sauthor, int year, Publisher publisher){
         this.title = stitle;
         this.author = sauthor;
+        this.publisher = publisher;
+        this.year = year;
     }
 
     public String getTitle() {
@@ -25,11 +28,7 @@ public class book {
     }
 
     public void display(){
-        System.out.println("Title: "+this.title+"\n"+"Author: "+this.author+"Publsiher: "+this.publisher.name);
-    }
-    public static void main(String[] args) {
-    book b1 = new book("POS","Adamski");
-    b1.display();   
+        System.out.println("Title: "+this.title+"\n"+"Author: "+this.author+"\nPublsiher: "+this.publisher.name);
     }
 
 }
